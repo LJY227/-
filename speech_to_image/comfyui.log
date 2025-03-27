@@ -1,0 +1,32 @@
+## ComfyUI-Manager: installing dependencies. (GitPython)
+Traceback (most recent call last):
+[2025-03-27 22:04:28.920]   File "C:\pinokio\api\comfyui.git\app\custom_nodes\ComfyUI-Manager\prestartup_script.py", line 312, in <module>
+[2025-03-27 22:04:28.920]     import git  # noqa: F401
+[2025-03-27 22:04:28.920]     ^^^^^^^^^^
+[2025-03-27 22:04:28.921] ModuleNotFoundError: No module named 'git'
+[2025-03-27 22:04:28.921] 
+[2025-03-27 22:04:28.921] During handling of the above exception, another exception occurred:
+[2025-03-27 22:04:28.921] 
+[2025-03-27 22:04:28.921] Traceback (most recent call last):
+[2025-03-27 22:04:28.922]   File "c:\pinokio\api\comfyui.git\app\main.py", line 98, in <module>
+[2025-03-27 22:04:28.922]     execute_prestartup_script()
+[2025-03-27 22:04:28.922]   File "c:\pinokio\api\comfyui.git\app\main.py", line 85, in execute_prestartup_script
+[2025-03-27 22:04:28.922]     success = execute_script(script_path)
+[2025-03-27 22:04:28.922]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-27 22:04:28.924]   File "c:\pinokio\api\comfyui.git\app\main.py", line 63, in execute_script
+[2025-03-27 22:04:28.924]     spec.loader.exec_module(module)
+[2025-03-27 22:04:28.924]   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+[2025-03-27 22:04:28.924]   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[2025-03-27 22:04:28.924]   File "C:\pinokio\api\comfyui.git\app\custom_nodes\ComfyUI-Manager\prestartup_script.py", line 319, in <module>
+[2025-03-27 22:04:28.924]     result = subprocess.check_output([sys.executable, '-s', '-m', 'pip', 'install', '-r', requirements_path])
+[2025-03-27 22:04:28.924]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-27 22:04:28.927]   File "C:\Users\sdit\anaconda3\envs\speech_to_image\Lib\subprocess.py", line 468, in check_output
+[2025-03-27 22:04:28.927]     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+[2025-03-27 22:04:28.927]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-27 22:04:28.929]   File "C:\Users\sdit\anaconda3\envs\speech_to_image\Lib\subprocess.py", line 552, in run
+[2025-03-27 22:04:28.929]     stdout, stderr = process.communicate(input, timeout=timeout)
+[2025-03-27 22:04:28.930]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-27 22:04:28.932]   File "C:\Users\sdit\anaconda3\envs\speech_to_image\Lib\subprocess.py", line 1198, in communicate
+[2025-03-27 22:04:28.932]     stdout = self.stdout.read()
+[2025-03-27 22:04:28.932]              ^^^^^^^^^^^^^^^^^^
+[2025-03-27 22:04:28.933] KeyboardInterrupt
